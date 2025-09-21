@@ -1,0 +1,17 @@
+{
+  "AVPs": [
+    {"label": "ABC",
+      "value": [
+        {"label": "DEF", "value": "Bingo"},
+        {
+          "label": "GHI", "value": "GHI"
+        }
+      ]},
+    {
+      "label": "JKL",
+      "value": [
+        {"label": "DEF", "value": "DEF"}
+      ]
+    }
+  ]
+}

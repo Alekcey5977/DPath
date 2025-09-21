@@ -1,0 +1,19 @@
+{
+    "AVPs": [
+        {"label": "AVP_1", "value": [
+            {"label": "AVP_1.1", "value": "ABC"},
+            {"label": "AVP_1.2", "value": "XCV"}
+        ]},
+        {"label": "AVP_2", "value": [
+            {"label": "AVP_2.1", "value": "ZXC"},
+            {"label": "AVP_2.2", "value": [
+                {"label": "AVP_2.2.1", "value": [
+                    {"label": "AVP_2.2.1.1", "value": "kkkkkkk"}
+                ]},
+                {"label": "AVP_2.2.2", "value": "asd"}
+            ]},
+            {"label": "AVP_2.3", "value": "qq"}
+        ]},
+        {"label": "AVP_3", "value": "123"}
+    ]
+}
