@@ -22,15 +22,39 @@
 
 ---
 
-## 🛠 Технологии
+## 🛠 Стек технологий
 - [Python 3](https://www.python.org/)
 - [ANTLR4](https://www.antlr.org/)
 - [dpath](https://github.com/akesterson/dpath-python) / [xmltodict](https://github.com/martinblech/xmltodict)
+- JSON для хранения данных
+- Система собственного компилятора и интерпретатора запросов  
 
 ---
 
+## Функционал
+
+- Составление запросов на собственном языке для навигации по JSON  
+- Обход дерева JSON и применение осей:  
+  - child, parent, ancestor, ancestor_or_self  
+  - descendant, descendant_or_self  
+  - following, following_sibling  
+  - preceding, preceding_sibling  
+- Поддержка сложных выражений с вложенными шагами 
+
+## Структура проекта
+
+dpath/\
+├── compiler.py # компилятор запросов\
+├── queryVisitor.py # обработка дерева парсера\
+├── axisProcessor.py # обработка осей запроса\
+├── InitializerParent.py # инициализация ссылок на родителей\
+├── Grammar.g4 # ANTLR-grammar для языка\
+├── grammar_generated/ # сгенерированные парсер и лексер\
+├── diameterJson.json # пример JSON с Diameter-сообщениями\
+└── main.py # пример использования
+
 ## 📦 Установка
-`bash
+```bash
 git clone https://github.com/Alekcey5977/DPath
-cd diameter-parser
-pip install -r requirements.txt
+cd DPath
+```
